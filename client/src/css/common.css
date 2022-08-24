@@ -1,0 +1,91 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	color: #2d2d2d;
+	font-size: .12rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+header,
+footer,
+article,
+section,
+nav,
+ul,
+li,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.container {
+	display: flex;
+}
+
+.clearfix::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.btn {
+	outline: 0;
+	border: 0;
+	padding: .06rem .08rem;
+	background-color: #fff;
+	color: #666;
+	box-shadow: 0 0 .36rem #ddd;
+	border-radius: 5%;
+	box-sizing: border-box;
+}
+
+.btn.btn-large {
+	padding: .08rem .16rem;
+}
+.btn.btn-info {
+	background-color: #ff4400;
+	color: #fff;
+}
+.btn.btn-warn {
+	background-color: #eeba30;
+	color: #fff;
+}
+.btn.btn-primary {
+	background-color: #0093cc;
+	color: #fff;
+}
+.btn.disabled {
+	background-color: #acacac;
+	opacity: .5;
+	transition: all .3s ease-in-out;
+}

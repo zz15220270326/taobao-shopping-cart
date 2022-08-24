@@ -1,0 +1,50 @@
+.cart-list {
+  width: 100%;
+  margin-top: .5rem;
+
+  .cart-item {
+    position: relative;
+    height: 1.08rem;
+    margin-bottom: .02rem;
+    
+    .item-check {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: .12rem;
+      height: .12rem;
+      z-index: 3;
+    }
+    .img-container {
+      position: absolute;
+      left: .2rem;
+      width: 2rem; 
+      
+      img {
+        height: 100%;
+        width: 1.03rem;
+      }
+    }
+    .main-info {
+      margin-left: 1.25rem;
+      height: 100%;
+      color: #676767;
+
+      .main-contnet {
+        font-size: .13rem;
+        // overflow: hidden;
+
+        .price-info {
+          color: #ff4400;
+          font-size: .15rem;
+          float: right;
+
+          &::before {
+            content: "￥";
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

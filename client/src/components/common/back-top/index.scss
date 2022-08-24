@@ -1,0 +1,19 @@
+.back-top {
+	position: fixed;
+	bottom: .3rem;
+	right: .3rem;
+	width: .36rem;
+	height: .36rem;
+	display: none;
+	background-color: #fff;
+	text-align: center;
+	line-height: .36rem;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+
+	&.active {
+		display: block;
+		transition: all .3s ease-in-out;
+	}
+}

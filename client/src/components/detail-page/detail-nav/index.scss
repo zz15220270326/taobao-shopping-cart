@@ -1,0 +1,73 @@
+.detail-nav {
+	width: 100%;
+	padding: .1rem;
+	background-color: #fff;
+	overflow: hidden;
+	border-radius: .08rem;
+	box-sizing: border-box;
+
+	.info {
+		flex: 1;
+
+		&.upper-info {
+			padding: .06rem 0;
+			box-sizing: border-box;
+		}
+		&.lower-info {
+			padding: .08rem 0;
+			box-sizing: border-box;
+		}
+
+		.coupon-info {
+			position: relative;
+
+			.take-coupon {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				font-size: .13rem;
+				color: #ff4400;
+
+				// &::after {
+        //   content: "＞";
+        //   font-size: .16rem;
+        //   font-weight: 750;
+				// }
+			}
+			.icon {
+				width: .13rem;
+				height: .13rem;
+				font-size: .16rem;
+				// display: block;
+			}
+		}
+
+		.price {
+			&::before {
+				content: "￥";
+			}
+
+			&.current {
+				color: #ff4400;
+				font-size: .22rem;
+				&::before {
+					font-size: .16rem;
+				}
+			}
+			&.pre {
+				opacity: .8;
+				text-decoration: line-through;
+			}
+		}
+
+		.pre-info {
+			font-size: .12rem;
+			color: #969696;
+			font-weight: 350;
+		}
+
+		h3 {
+			color: #676767;
+		}
+	}
+}
