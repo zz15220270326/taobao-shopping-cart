@@ -10,7 +10,7 @@ import IndexModel from '@/models/index';
 // import utils
 import { setLazyloadImg, throttle, debounce, transToString } from '@/utils/tools';
 
-((doc) => {
+;((doc) => {
 	const oContainer = doc.getElementsByClassName('J_Container')[0],
 				oHeader = Header({}),
 				oBackTop = BackTop({
